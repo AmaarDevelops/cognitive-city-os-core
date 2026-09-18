@@ -1,0 +1,27 @@
+{
+  "simulation_parameters": {
+    "total_scenarios": 1000,
+    "random_seed": 42,
+    "latency_target_ms": 50.0
+  },
+  "failure_matrix": {
+    "101": {
+      "type": "CRANE_TELEMETRY_TIMEOUT",
+      "severity": "CRITICAL",
+      "action": "ROUTE_TO_BACKUP_LEO_NETWORK",
+      "expected_state": "ISOLATED_NODE_SAFE"
+    },
+    "202": {
+      "type": "VEHICLE_ROUTING_FAILURE",
+      "severity": "HIGH",
+      "action": "TRIGGER_DYNAMIC_REROUTE_ALGORITHM",
+      "expected_state": "TRANSIT_DIVERTED"
+    },
+    "303": {
+      "type": "ROUTE_SEGMENT_BLOCKED",
+      "severity": "CRITICAL",
+      "action": "CLOSE_SMART_GATE_AND_DIVERT_FLEET",
+      "expected_state": "MESH_REBALANCED"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+# Cipher defaults
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+todos.json
+*.sqlite3
+.DS_Store
+Thumbs.db
+.cipher/
+*.log
+node_modules/

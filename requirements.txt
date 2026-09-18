@@ -1,0 +1,5 @@
+# Operational & Statistical Data Pipelines
+numpy==1.26.4
+
+# High-Performance Asynchronous Loop Environment (Standard Built-in Framework)
+# High-Resolution Time Diagnostics (Standard Built-in Framework)
